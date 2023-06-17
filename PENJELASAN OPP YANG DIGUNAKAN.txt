@@ -1,0 +1,27 @@
+Dalam script ini, diterapkan beberapa konsep OOP (Object-Oriented Programming) yang sudah dipelajari selama perkuliahan seperti:
+
+1. **Class**: 
+Terdapat beberapa class yang didefinisikan, yaitu `NegativeAgeException`, `Pet`, `Dog`, `Cat`, dan `Main`. Class merupakan blueprint untuk membuat objek.
+
+2. **Constructor**: 
+Setiap class memiliki constructor yang digunakan untuk menginisialisasi objek. Contohnya, constructor pada class `Pet`, `Dog`, dan `Cat` digunakan untuk menginisialisasi atribut `name` dan `age` serta menangani pengecualian jika usia negatif.
+
+3. **Inheritance**: 
+Class `Dog` dan `Cat` merupakan turunan dari class `Pet`. Ini berarti class `Dog` dan `Cat` mewarisi atribut dan metode dari class `Pet`.
+
+4. **Abstraction**: 
+Class `Pet` merupakan class abstrak yang memiliki metode abstrak `makeSound()`. Metode abstrak ini harus diimplementasikan oleh kelas turunan.
+
+5. **Interface**: 
+Terdapat interface `PetBehavior` yang memiliki dua metode, yaitu `eat()` dan `play()`. Kelas `Dog` dan `Cat` mengimplementasikan interface ini dengan menyediakan implementasi untuk kedua metode tersebut.
+
+6. **Getter dan Setter**: 
+Class `Pet` memiliki getter dan setter untuk atribut `name` dan `age`. Getter digunakan untuk mendapatkan nilai atribut, sedangkan setter digunakan untuk mengubah nilai atribut.
+
+7. **Polymorphism**: 
+Dalam metode `main()`, objek `dog` dan `cat` dideklarasikan sebagai tipe `Pet`, tetapi sebenarnya mereka adalah objek `Dog` dan `Cat` yang lebih spesifik. Polymorphism memungkinkan pemanggilan metode `makeSound()`, `eat()`, dan `play()` yang sesuai dengan tipe objek yang sebenarnya.
+
+8. **Exception Handling**: 
+Pada bagian `try-catch`, penanganan pengecualian dilakukan untuk menangkap `NegativeAgeException` yang dapat terjadi saat membuat objek `Dog` atau `Cat` dengan usia negatif.
+
+Ini adalah beberapa konsep OOP yang diterapkan dalam script tersebut.
